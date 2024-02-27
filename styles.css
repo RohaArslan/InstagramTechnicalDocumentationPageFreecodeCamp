@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    margin: auto;
+    padding: auto;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #405DE6; /* Instagram's blue */
+    color: #ffffff;
+    text-align: center;
+    overflow: auto;
+}
+
+#navbar header {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s;
+    font-weight: bold; /* Add this line to make the text bold */
+}
+
+
+.nav-link:hover {
+    background-color: #5851DB; /* Slightly darker blue */
+}
+
+#main-doc {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.main-section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        position: static;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
