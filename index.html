@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram Technical Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>Instagram Technical Documentation</h1>
+        </header>
+        <a class="nav-link" href="#Introduction">
+            <i class="icon fas fa-info-circle"></i> Introduction
+        </a>
+        <a class="nav-link" href="#Features">
+            <i class="icon fas fa-cogs"></i> Features
+        </a>
+        <a class="nav-link" href="#Account_Creation">
+            <i class="icon fas fa-user-plus"></i> Account Creation
+        </a>
+        <a class="nav-link" href="#Privacy">
+            <i class="icon fas fa-lock"></i> Privacy
+        </a>
+        <a class="nav-link" href="#API">
+            <i class="icon fas fa-code"></i> API
+        </a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>
+                Welcome to the Instagram Technical Documentation. This guide will provide you with insights into Instagram's platform, features, account creation, privacy settings, and its Application Programming Interface (API).
+            </p>
+            <p>
+                Instagram is a popular social media platform that allows users to share photos and videos, connect with friends, and explore content from around the world.
+            </p>
+            <code>
+                <p>npm install instagram-api</p>
+                <p>import Instagram from 'instagram-api';</p>
+                <p>const client = new Instagram({</p>
+                <p>  clientId: 'your-client-id',</p>
+                <p>  clientSecret: 'your-client-secret',</p>
+                <p>});</p>
+            </code>
+            <p>
+                Whether you're a regular user or a developer looking to integrate Instagram features into your applications, this documentation will guide you through the various aspects of the platform.
+            </p>
+            <p>
+                Let's explore the key features, learn how to create an Instagram account, manage your privacy settings, and harness the power of Instagram's API for your projects.
+            </p>
+        </section>
+        <section class="main-section" id="Features">
+            <header>Features</header>
+            <p>
+                Instagram offers a variety of features, including photo sharing, stories, IGTV, direct messaging, and more. Learn about how to use and integrate these features.
+            </p>
+            <ul>
+                <li>Photo Sharing</li>
+                <li>Stories</li>
+                <li>IGTV</li>
+                <li>Direct Messaging</li>
+                <li>Content Discovery</li>
+            </ul>
+            <p>
+                With Instagram's user-friendly interface, you can easily capture and share moments through photos and videos.
+            </p>
+            <code>
+                <p>function sharePhoto(photoUrl, caption) {</p>
+                <p>  // Code to share a photo</p>
+                <p>}</p>
+                <p>sharePhoto('https://example.com/my-photo.jpg', 'Enjoying a beautiful day!');</p>
+            </code>
+            <p>
+                Explore stories from other users and create your own by sharing moments that disappear after 24 hours.
+            </p>
+            <p>
+                Connect with friends and followers through direct messaging and discover content from accounts you follow.
+            </p>
+        </section>
+        <section class="main-section" id="Account_Creation">
+            <header>Account Creation</header>
+            <p>
+                Creating an Instagram account is easy. Follow our step-by-step guide on setting up your profile, choosing a username, and connecting with friends.
+            </p>
+            <p>
+                To create an Instagram account, download the Instagram app from your app store, or visit the website.
+            </p>
+            <code>
+                <p>1. Open the Instagram app or website.</p>
+                <p>2. Click "Sign Up" or "Create Account."</p>
+                <p>3. Enter your email address and create a username and password.</p>
+                <p>4. Complete your profile information and add a profile picture.</p>
+                <p>5. Start connecting with friends by searching for their usernames or importing contacts.</p>
+            </code>
+            <p>
+                Once your account is created, you can start sharing your favorite moments with the Instagram community.
+            </p>
+        </section>
+        <section class="main-section" id="Privacy">
+            <header>Privacy</header>
+            <p>
+                Protect your privacy on Instagram with our tips and settings. Learn how to control your visibility, manage followers, and secure your account.
+            </p>
+            <p>
+                Your privacy is important, and Instagram provides settings to customize who can see your content and interact with you.
+            </p>
+            <code>
+                <p>1. Go to your profile.</p>
+                <p>2. Click the three lines in the top right corner.</p>
+                <p>3. Go to "Settings" > "Privacy" > "Account Privacy."</p>
+                <p>4. Choose who can see your posts, stories, and more.</p>
+                <p>5. Manage your followers and block unwanted accounts.</p>
+            </code>
+            <p>
+                By adjusting your privacy settings, you can enjoy Instagram while maintaining control over your online presence.
+            </p>
+        </section>
+        <section class="main-section" id="API">
+            <header>API</header>
+            <p>
+                Instagram's API allows developers to access and interact with Instagram data. Discover how to use the API for various applications and projects.
+            </p>
+            <p>
+                If you're a developer, you can leverage Instagram's API to build applications that access Instagram data and perform actions on behalf of users.
+            </p>
+            <code>
+                <p>const client = new Instagram({</p>
+                <p>  clientId: 'your-client-id',</p>
+                <p>  clientSecret: 'your-client-secret',</p>
+                <p>});</p>
+                <p>const user = await client.getSelf();</p>
+                <p>console.log(user);</p>
+            </code>
+            <p>
+                The Instagram API provides endpoints for user information, media, comments, and more. Explore the possibilities of integrating Instagram data into your applications.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
